@@ -187,6 +187,8 @@ This will be animated by year.
 1. Ensure each country has a 3-letter ISO code. We'll use `country_converter` for that.
 2. Create a map with `px.choropleth` and use `animation_frame` to show changes over time.
 
+
+
 ```{python}
 emissions_long_1990_2022["country"] = emissions_long_1990_2022["country"].replace({"UAE": "United Arab Emirates"})
 # Convert country names to ISO3 codes
