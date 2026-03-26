@@ -188,6 +188,7 @@ This will be animated by year.
 2. Create a map with `px.choropleth` and use `animation_frame` to show changes over time.
 
 ```{python}
+emissions_long_1990_2022["country"] = emissions_long_1990_2022["country"].replace({"UAE": "United Arab Emirates"})
 # Convert country names to ISO3 codes
 emissions_long_1990_2022["country_code"] = coco.convert(
     emissions_long_1990_2022["country"], to="ISO3"
